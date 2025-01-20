@@ -72,81 +72,81 @@ describe('app-dir - owner-stack', () => {
     if (isNewDevOverlay) {
       if (process.env.TURBOPACK) {
         expect(normalizeStackTrace(errorLog)).toMatchInlineSnapshot(`
-       "%o
-       %s Error: browser error
-       at useThrowError 
-       at useErrorHook 
-       at Page 
-       at react-stack-bottom-frame 
-       at renderWithHooks 
-       at updateFunctionComponent 
-       at beginWork 
-       at runWithFiberInDEV 
-       at performUnitOfWork 
-       at workLoopSync 
-       at renderRootSync 
-       at performWorkOnRoot 
-       at performWorkOnRootViaSchedulerTask 
-       at MessagePort.performWorkUntilDeadline  The above error occurred in the <Page> component. It was handled by the <DevToolsErrorBoundary> error boundary."
-      `)
+          "%o
+          %s Error: browser error
+          at useThrowError 
+          at useErrorHook 
+          at Page 
+          at react-stack-bottom-frame 
+          at renderWithHooks 
+          at updateFunctionComponent 
+          at beginWork 
+          at runWithFiberInDEV 
+          at performUnitOfWork 
+          at workLoopSync 
+          at renderRootSync 
+          at performWorkOnRoot 
+          at performWorkOnRootViaSchedulerTask 
+          at MessagePort.performWorkUntilDeadline  The above error occurred in the <Page> component. It was handled by the <DevToolsErrorBoundary> error boundary."
+        `)
       } else {
         expect(normalizeStackTrace(errorLog)).toMatchInlineSnapshot(`
-        "%o
-        %s Error: browser error
-        at useThrowError 
-        at useErrorHook 
-        at Page 
-        at react-stack-bottom-frame 
-        at renderWithHooks 
-        at updateFunctionComponent 
-        at beginWork 
-        at runWithFiberInDEV 
-        at performUnitOfWork 
-        at workLoopSync 
-        at renderRootSync 
-        at performWorkOnRoot 
-        at performWorkOnRootViaSchedulerTask 
-        at MessagePort.performWorkUntilDeadline  The above error occurred in the <Page> component. It was handled by the <DevToolsErrorBoundary> error boundary."
+          "%o
+          %s Error: browser error
+          at useThrowError 
+          at useErrorHook 
+          at Page 
+          at react-stack-bottom-frame 
+          at renderWithHooks 
+          at updateFunctionComponent 
+          at beginWork 
+          at runWithFiberInDEV 
+          at performUnitOfWork 
+          at workLoopSync 
+          at renderRootSync 
+          at performWorkOnRoot 
+          at performWorkOnRootViaSchedulerTask 
+          at MessagePort.performWorkUntilDeadline  The above error occurred in the <Page> component. It was handled by the <DevToolsErrorBoundary> error boundary."
       `)
       }
     } else {
       if (process.env.TURBOPACK) {
         expect(normalizeStackTrace(errorLog)).toMatchInlineSnapshot(`
-       "%o
-       %s Error: browser error
-       at useThrowError 
-       at useErrorHook 
-       at Page 
-       at react-stack-bottom-frame 
-       at renderWithHooks 
-       at updateFunctionComponent 
-       at beginWork 
-       at runWithFiberInDEV 
-       at performUnitOfWork 
-       at workLoopSync 
-       at renderRootSync 
-       at performWorkOnRoot 
-       at performWorkOnRootViaSchedulerTask 
-       at MessagePort.performWorkUntilDeadline  The above error occurred in the <Page> component. It was handled by the <ReactDevOverlay> error boundary."
-      `)
+          "%o
+          %s Error: browser error
+          at useThrowError 
+          at useErrorHook 
+          at Page 
+          at react-stack-bottom-frame 
+          at renderWithHooks 
+          at updateFunctionComponent 
+          at beginWork 
+          at runWithFiberInDEV 
+          at performUnitOfWork 
+          at workLoopSync 
+          at renderRootSync 
+          at performWorkOnRoot 
+          at performWorkOnRootViaSchedulerTask 
+          at MessagePort.performWorkUntilDeadline  The above error occurred in the <Page> component. It was handled by the <ReactDevOverlay> error boundary."
+        `)
       } else {
         expect(normalizeStackTrace(errorLog)).toMatchInlineSnapshot(`
-        "%o
-        %s Error: browser error
-        at useThrowError 
-        at useErrorHook 
-        at Page 
-        at react-stack-bottom-frame 
-        at renderWithHooks 
-        at updateFunctionComponent 
-        at beginWork 
-        at runWithFiberInDEV 
-        at performUnitOfWork 
-        at workLoopSync 
-        at renderRootSync 
-        at performWorkOnRoot 
-        at performWorkOnRootViaSchedulerTask 
-        at MessagePort.performWorkUntilDeadline  The above error occurred in the <Page> component. It was handled by the <ReactDevOverlay> error boundary."
+          "%o
+          %s Error: browser error
+          at useThrowError 
+          at useErrorHook 
+          at Page 
+          at react-stack-bottom-frame 
+          at renderWithHooks 
+          at updateFunctionComponent 
+          at beginWork 
+          at runWithFiberInDEV 
+          at performUnitOfWork 
+          at workLoopSync 
+          at renderRootSync 
+          at performWorkOnRoot 
+          at performWorkOnRootViaSchedulerTask 
+          at MessagePort.performWorkUntilDeadline  The above error occurred in the <Page> component. It was handled by the <ReactDevOverlay> error boundary."
       `)
       }
     }
@@ -227,18 +227,18 @@ describe('app-dir - owner-stack', () => {
        at useThrowError 
        at useErrorHook 
        at Page 
-     at react-stack-bottom-frame 
-     at renderWithHooks 
-     at updateFunctionComponent 
-     at beginWork 
-     at runWithFiberInDEV 
-     at performUnitOfWork 
-     at workLoopSync 
-     at renderRootSync 
-     at performWorkOnRoot 
-     at performWorkOnRootViaSchedulerTask 
-     at MessagePort.performWorkUntilDeadline  The above error occurred in the <Page> component. It was handled by the <DevToolsErrorBoundary> error boundary."
-    `)
+       at react-stack-bottom-frame 
+       at renderWithHooks 
+       at updateFunctionComponent 
+       at beginWork 
+       at runWithFiberInDEV 
+       at performUnitOfWork 
+       at workLoopSync 
+       at renderRootSync 
+       at performWorkOnRoot 
+       at performWorkOnRootViaSchedulerTask 
+       at MessagePort.performWorkUntilDeadline  The above error occurred in the <Page> component. It was handled by the <DevToolsErrorBoundary> error boundary."
+      `)
     } else {
       expect(normalizeStackTrace(errorLog)).toMatchInlineSnapshot(`
        "%o
@@ -246,17 +246,17 @@ describe('app-dir - owner-stack', () => {
        at useThrowError 
        at useErrorHook 
        at Page 
-     at react-stack-bottom-frame 
-     at renderWithHooks 
-     at updateFunctionComponent 
-     at beginWork 
-     at runWithFiberInDEV 
-     at performUnitOfWork 
-     at workLoopSync 
-     at renderRootSync 
-     at performWorkOnRoot 
-     at performWorkOnRootViaSchedulerTask 
-     at MessagePort.performWorkUntilDeadline  The above error occurred in the <Page> component. It was handled by the <ReactDevOverlay> error boundary."
+       at react-stack-bottom-frame 
+       at renderWithHooks 
+       at updateFunctionComponent 
+       at beginWork 
+       at runWithFiberInDEV 
+       at performUnitOfWork 
+       at workLoopSync 
+       at renderRootSync 
+       at performWorkOnRoot 
+       at performWorkOnRootViaSchedulerTask 
+       at MessagePort.performWorkUntilDeadline  The above error occurred in the <Page> component. It was handled by the <ReactDevOverlay> error boundary."
     `)
     }
   })
